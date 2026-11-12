@@ -1,1 +1,350 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bollywood Cinema — Official APK Download</title>
+  <link rel="icon" type="image/jpeg" href="https://img.magnific.com/free-vector/realistic-bollywood-cinema-sign-illustration_23-2148470397.jpg?semt=ais_hybrid&w=740&q=80" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-dark: #0b0710;
+      --card-bg: rgba(24, 16, 34, 0.78);
+      --gold: #f5b942;
+      --gold-light: #ffe08a;
+      --crimson: #e11d48;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --border-glow: rgba(245, 185, 66, 0.28);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--bg-dark);
+      background-image:
+        radial-gradient(circle at 20% 15%, rgba(225, 29, 72, 0.22), transparent 42%),
+        radial-gradient(circle at 80% 85%, rgba(245, 185, 66, 0.18), transparent 45%),
+        linear-gradient(180deg, #0b0710 0%, #140b1e 100%);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 24px 16px;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 560px;
+      background: var(--card-bg);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border: 1px solid var(--border-glow);
+      border-radius: 28px;
+      padding: 40px 32px;
+      text-align: center;
+      box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.75), 0 0 40px rgba(245, 185, 66, 0.08);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .container::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 65%;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--gold), var(--crimson), var(--gold), transparent);
+    }
+
+    .official-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(245, 185, 66, 0.12);
+      border: 1px solid rgba(245, 185, 66, 0.35);
+      color: var(--gold-light);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 999px;
+      margin-bottom: 24px;
+    }
+
+    .official-badge .dot {
+      width: 8px;
+      height: 8px;
+      background-color: #22c55e;
+      border-radius: 50%;
+      box-shadow: 0 0 8px #22c55e;
+    }
+
+    .logo-wrapper {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 20px;
+      border-radius: 26px;
+      padding: 4px;
+      background: linear-gradient(135deg, var(--gold), var(--crimson));
+      box-shadow: 0 12px 30px rgba(225, 29, 72, 0.3);
+    }
+
+    .logo-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 22px;
+      display: block;
+    }
+
+    h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 2.1rem;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+      background: linear-gradient(135deg, #ffffff 15%, var(--gold-light) 55%, var(--gold) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 0.98rem;
+      color: #cbd5e1;
+      max-width: 440px;
+      margin: 0 auto 28px;
+    }
+
+    .download-btn {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      background: linear-gradient(135deg, var(--gold) 0%, #e09119 100%);
+      color: #140b1e;
+      text-decoration: none;
+      padding: 16px 24px;
+      border-radius: 16px;
+      font-weight: 700;
+      box-shadow: 0 10px 28px rgba(245, 185, 66, 0.35);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+    }
+
+    .download-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 34px rgba(245, 185, 66, 0.5);
+      filter: brightness(1.05);
+    }
+
+    .download-btn:active {
+      transform: translateY(0);
+    }
+
+    .btn-main-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.1rem;
+    }
+
+    .btn-sub-row {
+      font-size: 0.82rem;
+      font-weight: 600;
+      opacity: 0.85;
+      margin-top: 2px;
+    }
+
+    .meta-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 14px;
+      font-size: 0.84rem;
+      color: var(--text-muted);
+    }
+
+    .meta-pill {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 4px 12px;
+      border-radius: 8px;
+    }
+
+    .store-notice {
+      margin-top: 28px;
+      padding: 18px 20px;
+      background: rgba(225, 29, 72, 0.09);
+      border: 1px solid rgba(225, 29, 72, 0.28);
+      border-radius: 16px;
+      text-align: left;
+    }
+
+    .store-notice-title {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: #fda4af;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .store-notice p {
+      font-size: 0.86rem;
+      color: #e2e8f0;
+      margin-bottom: 14px;
+    }
+
+    .store-badges {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .store-pill {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: rgba(15, 10, 22, 0.7);
+      border: 1px dashed rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      padding: 10px 12px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .store-pill span strong {
+      display: block;
+      color: #e2e8f0;
+      font-size: 0.84rem;
+    }
+
+    .install-tip {
+      margin-top: 22px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    footer {
+      margin-top: 24px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 32px 20px;
+      }
+
+      h1 {
+        font-size: 1.75rem;
+      }
+
+      .store-badges {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="container">
+    <div class="official-badge">
+      <span class="dot"></span>
+      Official APK Release Page
+    </div>
+
+    <div class="logo-wrapper">
+      <img
+        src="https://img.magnific.com/free-vector/realistic-bollywood-cinema-sign-illustration_23-2148470397.jpg?semt=ais_hybrid&w=740&q=80"
+        alt="Bollywood Cinema Official Logo"
+      />
+    </div>
+
+    <h1>Bollywood Cinema</h1>
+    <p class="subtitle">
+      Welcome to the official page for downloading the authentic Android APK of <strong>Bollywood Cinema</strong>.
+    </p>
+
+    <a
+      href="https://drive.google.com/uc?export=download&id=1ZRjNHGzVfay0415Q1FXMvHqqCDJ7onKM"
+      class="download-btn"
+      download
+    >
+      <span class="btn-main-row">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+          <polyline points="7 10 12 15 17 10" />
+          <line x1="12" y1="15" x2="12" y2="3" />
+        </svg>
+        Download Official APK
+      </span>
+      <span class="btn-sub-row">Version 1.12 (c) Latest</span>
+    </a>
+
+    <div class="meta-info">
+      <span class="meta-pill">Version: <strong>1.12 (c)</strong></span>
+      <span class="meta-pill">Last Updated: <strong>12 Nov, 2026</strong></span>
+      <span class="meta-pill">Platform: <strong>Android</strong></span>
+    </div>
+
+    <div class="store-notice">
+      <div class="store-notice-title">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10" />
+          <line x1="12" y1="8" x2="12" y2="12" />
+          <line x1="12" y1="16" x2="12.01" y2="16" />
+        </svg>
+        Store Availability Notice
+      </div>
+      <p>
+        Currently, <strong>Bollywood Cinema</strong> is not available on the Google Play Store or Apple App Store. We are launching soon on both platforms — until then, download the verified APK exclusively from this official page.
+      </p>
+      <div class="store-badges">
+        <div class="store-pill">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M3.61 1.814L13.793 12 3.61 22.186a1.98 1.98 0 0 1-.61-1.43V3.244c0-.558.234-1.063.61-1.43zm11.24 11.24l2.838 2.838-11.79 6.727 8.952-9.565zm3.94-1.958l2.337 1.334c.83.474.83 1.666 0 2.14l-2.337 1.334-3.133-3.133 3.133-3.133v1.458zM5.898 1.381l11.79 6.727-2.838 2.838L5.898 1.381z"/>
+          </svg>
+          <span><strong>Google Play Store</strong>Coming Soon</span>
+        </div>
+        <div class="store-pill">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.96 6.32c.67-.81 1.12-1.94 1-3.07-.96.04-2.13.64-2.82 1.45-.61.7-.15 1.86-1.02 2.97 1.08.08 2.17-.54 2.84-1.35z"/>
+          </svg>
+          <span><strong>Apple App Store</strong>Coming Soon</span>
+        </div>
+      </div>
+    </div>
+
+    <p class="install-tip">
+      <strong>Installation Tip:</strong> After downloading, open the APK file and enable <em>"Install from Unknown Sources"</em> in your Android settings if prompted.
+    </p>
+  </main>
+
+  <footer>
+    &copy; 2026 Bollywood Cinema. All rights reserved.
+  </footer>
+
+</body>
+</html>
